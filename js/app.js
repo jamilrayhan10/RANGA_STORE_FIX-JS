@@ -15,14 +15,14 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.classList.add("myCartDesing");
     // show out put in UI
-    div.innerHTML = `<div class="single-product">
+    div.innerHTML = `<div class="single-product ">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <p>Rate: ${product.rating.rate}</p>
-      <p>Count: ${product.rating.count}</p>
+      <h4> <b>Rate: </b> ${product.rating.rate}</h4>
+      <h4> <b>Count: </b> ${product.rating.count}</h4>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">Add to Cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
