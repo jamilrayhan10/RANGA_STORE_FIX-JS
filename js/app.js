@@ -14,7 +14,7 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.classList.add("myCartDesing");
-    // show in UI
+    // show out put in UI
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
