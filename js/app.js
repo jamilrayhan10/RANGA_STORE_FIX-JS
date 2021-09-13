@@ -62,16 +62,19 @@ const updateTaxAndCharge = () => {
   updateTotal();
   const priceConverted = getInputValue("price");
   if (priceConverted > 200) {
-    setInnerText("delivery-charge", 30) + updateTotal();
-    setInnerText("total-tax", priceConverted * 0.2) + updateTotal();
+    // updateTotal();
+    setInnerText("delivery-charge", 30);
+    setInnerText("total-tax", priceConverted * 0.2);
   }
   if (priceConverted > 400) {
-    setInnerText("delivery-charge", 50) + updateTotal();
-    setInnerText("total-tax", priceConverted * 0.3) + updateTotal();
+    // updateTotal();
+    setInnerText("delivery-charge", 50);
+    setInnerText("total-tax", priceConverted * 0.3);
   }
   if (priceConverted > 500) {
-    setInnerText("delivery-charge", 60) + updateTotal();
-    setInnerText("total-tax", priceConverted * 0.4) + updateTotal();
+    // updateTotal();
+    setInnerText("delivery-charge", 60);
+    setInnerText("total-tax", priceConverted * 0.4);
   }
 };
 
